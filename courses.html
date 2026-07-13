@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undergraduate Courses - Nile University</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a3c6e'/%3E%3Ctext x='32' y='44' text-anchor='middle' fill='white' font-size='32' font-weight='bold' font-family='serif'%3EN%3C/text%3E%3C/svg%3E">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <span><i class="bi bi-geo-alt"></i> Plot 681, Cadastral Zone C-OO, Jabi, Abuja</span>
+                    <a href="tel:+2349169853402"><i class="bi bi-telephone"></i> 0916 985 3402</a>
+                </div>
+                <div class="top-bar-right">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar-main" id="mainNav">
+        <div class="container">
+            <div style="display:flex; align-items:center; justify-content:space-between;">
+                <a href="index.html" class="nav-brand">
+                    <svg width="50" height="50" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="64" height="64" rx="12" fill="#1a3c6e"/>
+                        <text x="32" y="44" text-anchor="middle" fill="white" font-size="32" font-weight="bold" font-family="serif">N</text>
+                    </svg>
+                    <div class="nav-brand-text">
+                        <span class="nav-brand-name">Nile University</span>
+                        <span class="nav-brand-sub">of Nigeria</span>
+                    </div>
+                </a>
+
+                <ul class="nav-links">
+                    <li>
+                        <a href="#">About <i class="bi bi-chevron-down"></i></a>
+                        <ul class="nav-dropdown">
+                            <li><a href="#"><i class="bi bi-person"></i> Vice Chancellor's Message</a></li>
+                            <li><a href="#"><i class="bi bi-diagram-3"></i> Organization Chart</a></li>
+                            <li><a href="#"><i class="bi bi-people"></i> Staff Directory</a></li>
+                            <li><a href="#"><i class="bi bi-newspaper"></i> Latest News</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="active">Study & Admission <i class="bi bi-chevron-down"></i></a>
+                        <ul class="nav-dropdown">
+                            <li><a href="courses.html"><i class="bi bi-book"></i> Undergraduate Courses</a></li>
+                            <li><a href="#"><i class="bi bi-mortarboard"></i> Postgraduate Courses</a></li>
+                            <li><a href="#"><i class="bi bi-calendar"></i> Academic Calendar</a></li>
+                            <li><a href="#"><i class="bi bi-cash-stack"></i> Tuition Fees</a></li>
+                            <li><a href="#"><i class="bi bi-award"></i> Scholarships</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Campus Life <i class="bi bi-chevron-down"></i></a>
+                        <ul class="nav-dropdown">
+                            <li><a href="#"><i class="bi bi-building"></i> Student Experience</a></li>
+                            <li><a href="#"><i class="bi bi-house-door"></i> Accommodation</a></li>
+                            <li><a href="#"><i class="bi bi-heart"></i> Student Welfare</a></li>
+                            <li><a href="#"><i class="bi bi-megaphone"></i> Clubs & Activities</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <div class="nav-cta">
+                    <a href="#" class="btn-apply">Apply Now</a>
+                </div>
+
+                <button class="nav-toggler" id="navToggler" onclick="toggleMobileNav()">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+
+            <div class="nav-mobile" id="mobileNav">
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="courses.html" style="color:var(--primary); font-weight:600;">Undergraduate Courses</a>
+                <a href="#">Postgraduate Courses</a>
+                <a href="#">Campus Life</a>
+                <a href="#">Tuition Fees</a>
+                <a href="#">Contact</a>
+                <a href="#" style="color:var(--accent); font-weight:600;">Apply Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="breadcrumb-bar">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><i class="bi bi-chevron-right"></i></li>
+                <li class="active">Undergraduate Courses</li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="hero-banner" style="padding:60px 0 50px;">
+        <div class="container hero-banner-content">
+            <h1>Undergraduate Courses</h1>
+            <p>With access to Nile University's extensive collections and resources, our undergraduates have discovered new species, patented products, and co-authored original research. Explore our diverse academic programs below.</p>
+        </div>
+    </section>
+
+    <section class="search-section">
+        <div class="container">
+            <div class="search-box">
+                <div class="search-title"><i class="bi bi-search"></i> Search for a course</div>
+                <div class="search-input-group">
+                    <input type="text" class="search-input" id="courseSearch" placeholder="Type course name (e.g. Computer Science, Engineering...)" oninput="filterCourses()">
+                    <button class="btn-search" onclick="filterCourses()"><i class="bi bi-search"></i> Search</button>
+                </div>
+                <div class="filter-tags">
+                    <span class="filter-tag active" onclick="filterByFaculty(this, 'all')">All Programs</span>
+                    <span class="filter-tag" onclick="filterByFaculty(this, 'engineering')">Engineering</span>
+                    <span class="filter-tag" onclick="filterByFaculty(this, 'science')">Sciences</span>
+                    <span class="filter-tag" onclick="filterByFaculty(this, 'management')">Management</span>
+                    <span class="filter-tag" onclick="filterByFaculty(this, 'law')">Law</span>
+                    <span class="filter-tag" onclick="filterByFaculty(this, 'humanities')">Humanities</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses-section">
+        <div class="container">
+            <div class="courses-grid" id="coursesGrid">
+                <div class="course-card fade-up" data-faculty="engineering" data-name="chemical engineering">
+                    <div class="course-card-img">
+                        <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&h=400&fit=crop" alt="Chemical Engineering">
+                        <span class="duration-badge">5 Years</span>
+                    </div>
+                    <div class="course-card-body">
+                        <h3 class="course-card-title"><a href="#">B.Eng. Chemical Engineering</a></h3>
+                        <p class="course-card-desc">Study the principles of chemical processes and engineering to solve industrial challenges.</p>
+                        <div class="course-card-meta">
+                            <span><i class="bi bi-mortarboard"></i> B.Eng.</span>
+                            <a href="#" class="course-card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card fade-up" data-faculty="engineering" data-name="civil engineering">
+                    <div class="course-card-img">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop" alt="Civil Engineering">
+                        <span class="duration-badge">5 Years</span>
+                    </div>
+                    <div class="course-card-body">
+                        <h3 class="course-card-title"><a href="#">B.Eng. Civil Engineering</a></h3>
+                        <p class="course-card-desc">Design, build, and maintain infrastructure systems that shape our world.</p>
+                        <div class="course-card-meta">
+                            <span><i class="bi bi-mortarboard"></i> B.Eng.</span>
+                            <a href="#" class="course-card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card fade-up" data-faculty="engineering" data-name="computer engineering">
+                    <div class="course-card-img">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop" alt="Computer Engineering">
+                        <span class="duration-badge">5 Years</span>
+                    </div>
+                    <div class="course-card-body">
+                        <h3 class="course-card-title"><a href="#">B.Eng. Computer Engineering</a></h3>
+                        <p class="course-card-desc">Integrate computer science and electrical engineering to develop hardware and software systems.</p>
+                        <div class="course-card-meta">
+                            <span><i class="bi bi-mortarboard"></i> B.Eng.</span>
+                            <a href="#" class="course-card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card fade-up" data-faculty="engineering" data-name="electrical electronics engineering">
+                    <div class="course-card-img">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop" alt="Electrical Engineering">
+                        <span class="duration-badge">5 Years</span>
+                    </div>
+                    <div class="course-card-body">
+                        <h3 class="course-card-title"><a href="#">B.Eng. Electrical & Electronics Engineering</a></h3>
+                        <p class="course-card-desc">Explore electrical systems, circuit design, and electronic communications.</p>
+                        <div class="course-card-meta">
+                            <span><i class="bi bi-mortarboard"></i> B.Eng.</span>
+                            <a href="#" class="course-card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card fade-up" data-faculty="engineering" data-name="mechanical engineering">
+                    <div class="course-card-img">
+                        <img src="https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?w=600&h=400&fit=crop" alt="Mechanical Engineering">
+                        <span class="duration-badge">5 Years</span>
+                    </div>
+                    <div class="course-card-body">
+                        <h3 class="course-card-title"><a href="#">B.Eng. Mechanical Engineering</a></h3>
+                        <p class="course-card-desc">Design and manufacture mechanical systems from concept to production.</p>
+                        <div class="course-card-meta">
+                            <span><i class="bi bi-mortarboard"></i> B.Eng.</span>
+                            <a href="#" class="course-card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card fade-up" data-faculty="engineering" data-name="petroleum gas engineering">
+                    <div class="course-card-img">
+                        <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?w=600&h=400&fit=crop" alt="Petroleum Engineering">
+                        <span class="duration-badge">5 Years</span>
+                    </div>
+                    <div class="course-card-body">
+                        <h3 class="course-card-title"><a href="#">B.Eng. Petroleum & Gas Engineering</a></h3>
+                        <p class="course-card-desc">Learn exploration, extraction, and processing of petroleum and natural gas resources.</p>
+                        <div class="course-card-meta">
+                            <span><i class="bi bi-mortarboard"></i> B.Eng.</span>
+                            <a href="#" class="course-card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card fade-up" data-faculty="science" data-name="computer science">
+                    <div class="course-card-img">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop" alt="Computer Science">
+                        <span class="duration-badge">4 Years</span>
+                    </div>
+                    <div class="course-card-body">
+                        <h3 class="course-card-title"><a href="#">B.Sc. Computer Science</a></h3>
+                        <p class="course-card-desc">Master programming, algorithms, artificial intelligence, and software development.</p>
+                        <div class="course-card-meta">
+                            <span><i class="bi bi-mortarboard"></i> B.Sc.</span>
+                            <a href="#" class="course-card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card fade-up" data-faculty="science" data-name="cyber security">
+                    <div class="course-card-img">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop" alt="Cyber Security">
+                        <span class="duration-badge">4 Years</span>
+                    </div>
+                    <div class="course-card-body">
+                        <h3 class="course-card-title"><a href="#">B.Sc. Cyber Security</a></h3>
+                        <p class="course-card-desc">Protect digital assets and learn ethical hacking, network security, and forensics.</p>
+                        <div class="course-card-meta">
+                            <span><i class="bi bi-mortarboard"></i> B.Sc.</span>
+                            <a href="#" class="course-card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card fade-up" data-faculty="science" data-name="biochemistry">
+                    <div class="course-card-img">
+                        <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&h=400&fit=crop" alt="Biochemistry">
+                        <span class="duration-badge">4 Years</span>
+                    </div>
+                    <div class="course-card-body">
+                        <h3 class="course-card-title"><a href="#">B.Sc. Biochemistry</a></h3>
+                        <p class="course-card-desc">Study the chemical processes within and related to living organisms.</p>
+                        <div class="course-card-meta">
+                            <span><i class="bi bi-mortarboard"></i> B.Sc.</span>
+                            <a href="#" class="course-card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card fade-up" data-faculty="science" data-name="biotechnology">
+                    <div class="course-card-img">
+                        <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?w=600&h=400&fit=crop" alt="Biotechnology">
+                        <span class="duration-badge">4 Years</span>
+                    </div>
+                    <div class="course-card-body">
+                        <h3 class="course-card-title"><a href="#">B.Sc. Biotechnology</a></h3>
+                        <p class="course-card-desc">Harness biological systems to develop innovative products and technologies.</p>
+                        <div class="course-card-meta">
+                            <span><i class="bi bi-mortarboard"></i> B.Sc.</span>
+                            <a href="#" class="course-card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card fade-up" data-faculty="science" data-name="biology">
+                    <div class="course-card-img">
+                        <img src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=600&h=400&fit=crop" alt="Biology">
+                        <span class="duration-badge">4 Years</span>
+                    </div>
+                    <div class="course-card-body">
+                        <h3 class="course-card-title"><a href="#">B.Sc. Biology</a></h3>
+                        <p class="course-card-desc">Explore the science of life, from microscopic cells to complex ecosystems.</p>
+                        <div class="course-card-meta">
+                            <span><i class="bi bi-mortarboard"></i> B.Sc.</span>
+                            <a href="#" class="course-card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card fade-up" data-faculty="management" data-name="accounting">
+                    <div class="course-card-img">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop" alt="Accounting">
+                        <span class="duration-badge">4 Years</span>
+                    </div>
+                    <div class="course-card-body">
+                        <h3 class="course-card-title"><a href="#">B.Sc. Accounting</a></h3>
+                        <p class="course-card-desc">Learn financial reporting, auditing, taxation, and management accounting.</p>
+                        <div class="course-card-meta">
+                            <span><i class="bi bi-mortarboard"></i> B.Sc.</span>
+                            <a href="#" class="course-card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card fade-up" data-faculty="management" data-name="banking finance">
+                    <div class="course-card-img">
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop" alt="Banking and Finance">
+                        <span class="duration-badge">4 Years</span>
+                    </div>
+                    <div class="course-card-body">
+                        <h3 class="course-card-title"><a href="#">B.Sc. Banking & Finance</a></h3>
+                        <p class="course-card-desc">Understand financial markets, banking operations, and investment management.</p>
+                        <div class="course-card-meta">
+                            <span><i class="bi bi-mortarboard"></i> B.Sc.</span>
+                            <a href="#" class="course-card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card fade-up" data-faculty="management" data-name="business administration">
+                    <div class="course-card-img">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop" alt="Business Administration">
+                        <span class="duration-badge">4 Years</span>
+                    </div>
+                    <div class="course-card-body">
+                        <h3 class="course-card-title"><a href="#">B.Sc. Business Administration</a></h3>
+                        <p class="course-card-desc">Develop management, leadership, and entrepreneurial skills for the global market.</p>
+                        <div class="course-card-meta">
+                            <span><i class="bi bi-mortarboard"></i> B.Sc.</span>
+                            <a href="#" class="course-card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card fade-up" data-faculty="law" data-name="law">
+                    <div class="course-card-img">
+                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&h=400&fit=crop" alt="Law">
+                        <span class="duration-badge">5 Years</span>
+                    </div>
+                    <div class="course-card-body">
+                        <h3 class="course-card-title"><a href="#">LL.B. Law</a></h3>
+                        <p class="course-card-desc">Study Nigerian and international law, legal theory, and the justice system.</p>
+                        <div class="course-card-meta">
+                            <span><i class="bi bi-mortarboard"></i> LL.B.</span>
+                            <a href="#" class="course-card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card fade-up" data-faculty="humanities" data-name="criminology security studies">
+                    <div class="course-card-img">
+                        <img src="https://images.unsplash.com/photo-1589578527966-fdac0f44566c?w=600&h=400&fit=crop" alt="Criminology">
+                        <span class="duration-badge">4 Years</span>
+                    </div>
+                    <div class="course-card-body">
+                        <h3 class="course-card-title"><a href="#">B.Sc. Criminology & Security Studies</a></h3>
+                        <p class="course-card-desc">Examine crime, criminal behavior, and security management strategies.</p>
+                        <div class="course-card-meta">
+                            <span><i class="bi bi-mortarboard"></i> B.Sc.</span>
+                            <a href="#" class="course-card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card fade-up" data-faculty="humanities" data-name="international relations">
+                    <div class="course-card-img">
+                        <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=600&h=400&fit=crop" alt="International Relations">
+                        <span class="duration-badge">4 Years</span>
+                    </div>
+                    <div class="course-card-body">
+                        <h3 class="course-card-title"><a href="#">B.Sc. International Relations</a></h3>
+                        <p class="course-card-desc">Understand global politics, diplomacy, and international affairs.</p>
+                        <div class="course-card-meta">
+                            <span><i class="bi bi-mortarboard"></i> B.Sc.</span>
+                            <a href="#" class="course-card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card fade-up" data-faculty="humanities" data-name="mass communication">
+                    <div class="course-card-img">
+                        <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=600&h=400&fit=crop" alt="Mass Communication">
+                        <span class="duration-badge">4 Years</span>
+                    </div>
+                    <div class="course-card-body">
+                        <h3 class="course-card-title"><a href="#">B.Sc. Mass Communication</a></h3>
+                        <p class="course-card-desc">Learn journalism, public relations, broadcasting, and digital media.</p>
+                        <div class="course-card-meta">
+                            <span><i class="bi bi-mortarboard"></i> B.Sc.</span>
+                            <a href="#" class="course-card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="noResults" style="display:none; text-align:center; padding:60px 20px;">
+                <i class="bi bi-search" style="font-size:3rem; color:var(--gray-300);"></i>
+                <h3 style="margin-top:15px; color:var(--gray-700);">No courses found</h3>
+                <p style="color:var(--gray-500);">Try a different search term or filter.</p>
+            </div>
+
+            <div class="load-more-wrap" id="loadMoreWrap">
+                <button class="btn-load-more" id="loadMoreBtn" onclick="loadMore()">Load More <i class="bi bi-arrow-down"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-box fade-up">
+                <div class="cta-text">
+                    <h2>Ready to Begin Your Journey?</h2>
+                    <p>Applications are now open. Take the first step toward your future at Nile University.</p>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#" class="btn-apply" style="padding:14px 32px;">Apply Now</a>
+                    <a href="#" class="btn-pay" style="padding:12px 28px;">Download Prospectus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">
+                        <svg width="45" height="45" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="64" height="64" rx="12" fill="#c8102e"/>
+                            <text x="32" y="44" text-anchor="middle" fill="white" font-size="32" font-weight="bold" font-family="serif">N</text>
+                        </svg>
+                        <span class="footer-brand-name">Nile University of Nigeria</span>
+                    </div>
+                    <p class="footer-desc">Member institution of Honoris United Universities. Empowering the next generation of African leaders.</p>
+                    <div class="footer-address">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>Plot 681, Cadastral Zone C-OO, Research & Institution Area, Jabi Airport Bypass, Abuja FCT, 900001 Nigeria</span>
+                    </div>
+                    <div class="footer-address">
+                        <i class="bi bi-telephone-fill"></i>
+                        <a href="tel:+2349169853402" style="color:rgba(255,255,255,0.6);">0916 985 3402</a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h6 class="footer-heading">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Contact Us</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> FAQs</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> University News</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Careers At Nile</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Virtual Tour</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="footer-heading">Study & Admission</h6>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> School of Preliminary Studies</a></li>
+                        <li><a href="courses.html"><i class="bi bi-chevron-right"></i> Undergraduate Courses</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Postgraduate Courses</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Tuition Fees</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Scholarships</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="footer-heading">Other Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Student Portal</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Staff Portal</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Hostel Payment</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Nile Blog</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Library</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-designed-by">
+                    <span>Designed By:</span> OJIE DIVINE ERONBHONSELE - 12345678
+                </div>
+                <p>&copy; 2026 Nile University of Nigeria &mdash; All Rights Reserved | Member institution of Honoris United Universities.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="bi bi-arrow-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
